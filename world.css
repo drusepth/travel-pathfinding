@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+body, html {
+  background: #060;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.city {
+  width: 32px;
+  height: 32px;
+  margin: -16px; /* 32 / 2, to center */
+  cursor: pointer;
+  
+  background: url('http://www.gifs-paradise.com/animations/animated-gifs-houses-80.gif');
+}
+
+.selected {
+  background-color: yellow;
+  border-radius: 16px;
+}
+
+.card {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  
+  min-height: 40px;
+  width: 300px;
+  
+  padding: 15px;
+  background: white;
+}
